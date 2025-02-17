@@ -1,5 +1,4 @@
 matplotlib
 seaborn
 numpy
-pickle
 pandas
