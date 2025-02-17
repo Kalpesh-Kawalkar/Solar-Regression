@@ -5,9 +5,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the trained model
-with open("solar_power_model_xgb_best.pkl", "rb") as f:
+# Absolute path
+import os
+file_path = os.path.join(os.path.dirname(__file__), "solar_power_model_xgb_best.pkl")
+
+with open(file_path, "rb") as f:
     model = pickle.load(f)
+
+# Load the trained model
+#with open("solar_power_model_xgb_best.pkl", "rb") as f:
+    #model = pickle.load(f)
 
 # Title
 st.title("☀️ Solar Power Generation Prediction")
